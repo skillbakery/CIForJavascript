@@ -1,4 +1,4 @@
-# 02_03 CI for JavaScript
+#CI for JavaScript
 
 Check node versions in the matrix strategy.
 
