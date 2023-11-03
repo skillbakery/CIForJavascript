@@ -19,10 +19,10 @@ describe('Express app', () => {
   describe('GET /:guid', () => {
     it('should return a single item of data', async () => {
       const res =
-        await chai.request(app).get('/05024756-765e-41a9-89d7-1407436d9a58');
+        await chai.request(app).get('/d9687f41-e2e4-4a59-8ad3-6c29d925e12b');
       expect(res.status).to.equal(200);
       expect(res.body).to.be.an('object');
-      expect(res.body.guid).to.equal('05024756-765e-41a9-89d7-1407436d9a58');
+      expect(res.body.guid).to.equal('d9687f41-e2e4-4a59-8ad3-6c29d925e12b');
     });
 
     it('should return a 404 status code for an invalid GUID', async () => {
