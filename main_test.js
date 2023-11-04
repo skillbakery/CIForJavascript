@@ -19,7 +19,7 @@ describe('Express app', () => {
   describe('GET /:guid', () => {
     it('should return a single item of data', async () => {
       const res =
-        await chai.request(app).get('/d9687f41-e2e4-4a59-8ad3-6c29d925e12b');
+        await chai.request(app).get('d9687f41-e2e4-4a59-8ad3-6c29d925e12b');
       expect(res.status).to.equal(200);
       expect(res.body).to.be.an('object');
       expect(res.body.guid).to.equal('d9687f41-e2e4-4a59-8ad3-6c29d925e12b');
